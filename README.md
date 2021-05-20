@@ -1,7 +1,7 @@
 # tsp-meta-heuristic
 Python implementation of Tabu Search (TB), Genetic Algorithm (GA) and Simulated Annealing (SA) solveing Travelling Salesman Problem (TSP).
 
-![sa](D:\mine\Github\_mine_github\tsp-meta-heuristic\assets\sa.gif)
+![sa](assets/sa.gif)
 
 # Requirements
 
@@ -33,7 +33,7 @@ Experimental results are shown as follows. The unit of time is seconds.
 |   80    |   100   |      **6659.4 (0%)**      |      6888.2 (3.4%)      |   187.7   | **0.196** | **0.050** |
 |   80    |   300   |      **6659.4 (0%)**      |     6704.6 (0.68%)      |   100.5   |   0.531   |   0.077   |
 
-![tb](\assets\tb.png)
+![tb](assets/tb.png)
 
 ## Genetic Algorithm
 
@@ -43,7 +43,7 @@ Experimental results are shown as follows. The unit of time is seconds.
 |  200  |   0.5   | 0.8   |   10    |      **6659.4 (0%)**      |   **6680.1 (0.31%)**    | **46.20** | **4.02** | **0.85** |
 |  500  |   0.5   | 0.8   |    3    |      **6659.4 (0%)**      |     6682.2 (0.34%)      |   86.06   |   10.6   |   2.3    |
 
-![ga](\assets\ga.png)
+![ga](assets/ga.png)
 
 ## Simulated Annealing
 
@@ -60,7 +60,7 @@ Experimental results are shown as follows. The unit of time is seconds.
 |   20    |   20    | 1200 (0.7)       | 0.9   |      **6659.4 (0%)**      |     6666.1 (0.10%)      |   39.44   |   0.463   |   0.062   |
 |   40    |   20    | 1200 (0.7)       | 0.9   |      **6659.4 (0%)**      |     6671.1 (0.18%)      |   64.43   |   0.488   |   0.064   |
 
-![sa](\assets\sa.png)
+![sa](assets/sa.png)
 
 # License
 
