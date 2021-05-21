@@ -33,7 +33,7 @@ Experimental results are shown as follows. The unit of time is seconds.
 |   80    |   100   |      **6659.4 (0%)**      |      6888.2 (3.4%)      |   187.7   | **0.196** | **0.050** |
 |   80    |   300   |      **6659.4 (0%)**      |     6704.6 (0.68%)      |   100.5   |   0.531   |   0.077   |
 
-![tb](assets/tb.png)
+![ts](assets/ts.png)
 
 ## Genetic Algorithm
 
