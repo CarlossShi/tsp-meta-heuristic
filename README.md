@@ -1,5 +1,5 @@
 # tsp-meta-heuristic
-Python implementation of Tabu Search (TB), Genetic Algorithm (GA) and Simulated Annealing (SA) solveing Travelling Salesman Problem (TSP).
+Python implementation of Tabu Search (TB), Genetic Algorithm (GA), and Simulated Annealing (SA) solveing Travelling Salesman Problem (TSP).
 
 ![sa](assets/sa.gif)
 
