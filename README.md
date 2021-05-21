@@ -1,5 +1,7 @@
 # tsp-meta-heuristic
-Python implementation of Tabu Search (TB), Genetic Algorithm (GA), and Simulated Annealing (SA) solveing Travelling Salesman Problem (TSP).
+Python implementation of Tabu Search (TB), Genetic Algorithm (GA), and Simulated Annealing (SA) solveing Travelling Salesman Problem (TSP). Term project of Intelligent Optimization Methods, UCAS course [070105M05002H](http://jwxk.ucas.ac.cn/course/courseplan/184399).
+
+禁忌搜索, 遗传算法, 模拟退火解旅行商问题的Python实现. 中国科学院大学智能优化算法大作业.
 
 ![sa](assets/sa.gif)
 
@@ -68,6 +70,4 @@ MIT
 
 # Acknowledgments
 
-UCAS course: Intelligent Optimization Methods [070105M05002H](http://jwxk.ucas.ac.cn/course/courseplan/184399)
-
-中国科学院大学 智能优化算法
+Intelligent Optimization Methods, UCAS course [070105M05002H](http://jwxk.ucas.ac.cn/course/courseplan/184399)
