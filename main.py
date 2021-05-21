@@ -12,10 +12,12 @@ import tb
 import ga
 import sa
 
+
 # load data
 
 pos = [[float(x) for x in s.split()[1:]] for s in open('data/dj38.txt').readlines()]
 n = len(pos)
+
 
 # calculate adjacency matrix
 
@@ -28,7 +30,7 @@ for i in range(n):
 # initialization
 
 opt_cost = 6659.439330623091  # get result from tsp_gurobi.py
-num_tests = 10  # number of iid tests
+num_tests = 100  # number of iid tests
 result = {'best_sol': [], 'best_cost': math.inf, 'best_gap': math.inf,
           'cost': [0] * num_tests, 'time': [0] * num_tests,
           'avg_cost': math.inf, 'avg_gap': math.inf, 'cost_std': math.inf,
@@ -37,22 +39,27 @@ best_cost = math.inf
 best_sol = []
 data = {}
 
+
 # set method
 
-# method = 'ts'  # tabu search
+method = 'ts'  # tabu search
 # method = 'ga'  # genetic algorithm
-method = 'sa'  # simulated annealing
+# method = 'sa'  # simulated annealing
+
 
 # set mutation method
 
 # mut_md = [get_new_sol_swap, get_delta_swap]
 mut_md = [get_new_sol_2opt, get_delta_2opt]
 
+
 # run and visualization
 
+method_name = ''
 for _ in tqdm(range(num_tests)):
     start = time.time()
     if method == 'ts':
+        method_name = 'Tabu Search'
         best_sol, best_cost, data = tb.tb(n, adj_mat,
                                           tb_size=20,  # tabu solutions in tb_list
                                           max_tnm=100,  # how many candidates picked in tournament selection
@@ -60,8 +67,9 @@ for _ in tqdm(range(num_tests)):
                                           term_count=200  # terminate threshold if best_cost nor change
                                           )
     elif method == 'ga':
+        method_name = 'Genetic Algorithm'
         best_sol, best_cost, data = ga.ga(n, adj_mat,
-                                          n_pop=500,
+                                          n_pop=200,
                                           r_cross=0.5,
                                           r_mut=0.8,
                                           selection_md='tnm',  # 'rw' / 'tnm' / 'elt'
@@ -69,6 +77,7 @@ for _ in tqdm(range(num_tests)):
                                           term_count=200
                                           )
     elif method == 'sa':
+        method_name = 'Simulated Annealing'
         best_sol, best_cost, data = sa.sa(n, adj_mat,
                                           tb_size=0,  # tabu solutions in tb_list
                                           max_tnm=20,  # how many candidates picked in tournament selection
@@ -91,9 +100,9 @@ for _ in tqdm(range(num_tests)):
     plt.plot(range(len(data['cost'])), data['best_cost'], color='r', alpha=math.pow(num_tests, -0.75))
 
 
-plt.title('solving TSP with {}'.format(method))
-plt.xlabel('no. of generation')
-plt.ylabel('cost')
+plt.title('Solving TSP with {}'.format(method_name))
+plt.xlabel('Number of Iteration')
+plt.ylabel('Cost')
 plt.savefig('results/{}.png'.format(method))
 
 # print results
@@ -121,8 +130,7 @@ if num_tests == 1 and method == 'simulated annealing':
     ax[1].set(xlabel='Number of Iteration', ylabel='Tour Length',
               title='Convergence Curve')
     ims = []
-    #for i in range(len(data['sol'])):
-    for i in range(10):
+    for i in range(len(data['sol'])):
         im = []
         sol = data['sol'][i]
         best_sol = data['best_sol'][i]
