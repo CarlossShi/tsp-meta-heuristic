@@ -11,13 +11,13 @@ Python implementation of Tabu Search (TB), Genetic Algorithm (GA), and Simulated
 
 # Getting Started
 
-Test data *dj38.txt* can be found in [Djibouti - 38 Cities](http://www.math.uwaterloo.ca/tsp/world/countries.html#DJ).
+Test data ==dj38.txt== can be found in [Djibouti - 38 Cities](http://www.math.uwaterloo.ca/tsp/world/countries.html#DJ).
 
-Get optimal tour length from better tsp solver, e.g. [Gurobi](https://www.gurobi.com/documentation/9.1/examples/tsp_py.html), and replace **opt_cost** in *main.py* with that result so that we can calculate the optimality gap.
+Get optimal tour length from better tsp solver, e.g. [Gurobi](https://www.gurobi.com/documentation/9.1/examples/tsp_py.html), and replace `opt_cost` in ==main.py== with that result so that we can calculate the optimality gap.
 
-Change **method** to either 'ts',  'ga', or 'sa' in *main.py*.  Run the code.
+Change `method` to either `'ts'`,  `'ga'`, or `'sa'` in ==main.py==.  Run the code.
 
-Check the results in '/results/'.
+Check the results in ==/results/==.
 
 Note:
 
