@@ -21,7 +21,7 @@ Check the results in `/results/`.
 
 Note:
 
-1. If running with simulated annealing, you can run `init_temp` first to get the initial temperature (see [Ben-Ameur, W. (2004)](https://link.springer.com/article/10.1023/B:COAP.0000044187.23143.bd)).
+1. If running with simulated annealing, you can run `init_temp.py` first to get the initial temperature (see [Ben-Ameur, W. (2004)](https://link.springer.com/article/10.1023/B:COAP.0000044187.23143.bd)).
 2. If you want to visualize the optimization process of simulated annealing with gif, set **num_test** to 1. (This may take a very long time.)
 
 Experimental results are shown as follows. The unit of time is seconds.
