@@ -26,6 +26,14 @@ Note:
 
 Experimental results are shown as follows. The unit of time is seconds.
 
+
+# Algorithm Details
+
+In Genetic Algorithm, the crossover and mutation operators are Order 1 Crossover (often referred to as OX or Order Crossover) and Center Inverse Mutation (CIM), respectively. They are chosen because of the conclusion in the article [A Comparison of GA Crossover and Mutation Methods for the Traveling Salesman Problem](https://link.springer.com/chapter/10.1007/978-981-15-6067-5_60).
+
+
+# Experiments
+
 ## Tabu Search
 
 | tb_size | max_tnm | best_cost<br />(best_gap) | avg_cost<br />(avg_gap) | cost_std  | avg_time  | time_std  |
