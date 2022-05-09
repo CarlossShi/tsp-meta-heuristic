@@ -24,15 +24,14 @@ Note:
 1. If running with simulated annealing, you can run `init_temp.py` first to get the initial temperature (see [Ben-Ameur, W. (2004)](https://link.springer.com/article/10.1023/B:COAP.0000044187.23143.bd)).
 2. If you want to visualize the optimization process of simulated annealing with gif, set `num_test` to 1. (This may take a very long time.)
 
-Experimental results are shown as follows. The unit of time is seconds.
-
-
 # Algorithm Details
 
 In Genetic Algorithm, the crossover and mutation operators are Order 1 Crossover (often referred to as OX or Order Crossover) and Center Inverse Mutation (CIM), respectively. They are chosen because of the conclusion in the article [A Comparison of GA Crossover and Mutation Methods for the Traveling Salesman Problem](https://link.springer.com/chapter/10.1007/978-981-15-6067-5_60).
 
 
 # Experiments
+
+Experimental results are shown as follows. The unit of time is seconds.
 
 ## Tabu Search
 
