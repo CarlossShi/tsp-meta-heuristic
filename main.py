@@ -12,6 +12,9 @@ import tb
 import ga
 import sa
 
+import os
+if not os.path.exists('results'):
+    os.makedirs('results')
 
 # load data
 
